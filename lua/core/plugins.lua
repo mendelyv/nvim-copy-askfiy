@@ -50,10 +50,6 @@ M.lsp = {
         event = { "UIEnter" },
     },
     {
-        "kosayoda/nvim-lightbulb",
-        event = { "UIEnter" },
-    },
-    {
         "jose-elias-alvarez/null-ls.nvim",
         event = { "UIEnter" },
     },
@@ -80,31 +76,6 @@ M.complete = {
         dependencies = {
             { "rafamadriz/friendly-snippets" },
         },
-    },
-}
-
-M.dap = {
-    {
-        "mfussenegger/nvim-dap",
-        lazy = true,
-    },
-    {
-        "theHamsta/nvim-dap-virtual-text",
-        event = { "UIEnter" },
-    },
-    {
-        "rcarriga/nvim-dap-ui",
-        event = { "UIEnter" },
-    },
-    -- neovim lua debug,
-    {
-        "jbyuki/one-small-step-for-vimkind",
-        ft = { "lua" },
-    },
-    -- javascript debug,
-    {
-        "mxsdev/nvim-dap-vscode-js",
-        ft = { "javascript", "typescript" },
     },
 }
 
