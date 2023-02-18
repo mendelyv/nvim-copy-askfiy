@@ -15,7 +15,7 @@ function M.get_opts()
         -- plugin install root directory
         root = options.storage_directory,
         install = {
-            colorscheme = { "default" },
+            colorscheme = { "desert" },
         },
         ui = {
             border = options.float_border and "double" or "none",

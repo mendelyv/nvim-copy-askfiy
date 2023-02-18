@@ -4,7 +4,7 @@ local M = {}
 
 M.theme = {
     {
-        "askfiy/starlight",
+        "sainnhe/everforest",
         priority = 100,
     },
 }
@@ -69,7 +69,7 @@ M.complete = {
             { "hrsh7th/cmp-nvim-lsp" },
             { "saadparwaiz1/cmp_luasnip" },
             { "kristijanhusak/vim-dadbod-completion" },
-            { "tzachar/cmp-tabnine", build = "./install.sh" },
+            -- { "tzachar/cmp-tabnine", build = "./install.sh" },
         },
         event = { "InsertEnter", "CmdlineEnter" },
     },
