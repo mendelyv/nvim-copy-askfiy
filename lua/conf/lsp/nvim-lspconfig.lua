@@ -155,14 +155,14 @@ function M.register_key()
         },
         {
             mode = { "n" },
-            lhs = "[g",
+            lhs = "g[",
             rhs = aid_nvim_lspconfig.goto_prev_diagnostic,
             options = { silent = true },
             description = "Jump to prev diagnostic",
         },
         {
             mode = { "n" },
-            lhs = "]g",
+            lhs = "g]",
             rhs = aid_nvim_lspconfig.goto_next_diagnostic,
             options = { silent = true },
             description = "Jump to next diagnostic",
