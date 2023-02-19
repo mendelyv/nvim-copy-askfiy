@@ -125,6 +125,13 @@ M.editor = {
         "windwp/nvim-autopairs",
         event = { "InsertEnter" },
     },
+    {
+        "danymat/neogen",
+        dependencies = {
+            { "nvim-treesitter/nvim-treesitter" },
+        },
+        config = true,
+    },
 }
 
 M.find = {
