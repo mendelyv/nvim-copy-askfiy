@@ -231,6 +231,10 @@ M.views = {
         cmd = { "DBUIToggle" },
         lazy = true,
     },
+    {
+        "tami5/lspsaga.nvim",
+        event = { "UIEnter" },
+    },
 }
 
 aid_lazy.entry(M)

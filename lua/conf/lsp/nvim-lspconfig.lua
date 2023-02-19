@@ -12,7 +12,7 @@ local M = {
     },
     disabled_servers = {
         -- "pyright",
-        "pylance"
+        "pylance",
     },
     server_configurations_dir_path = api.path.join("conf", "lsp", "server_configurations"),
 }
@@ -73,7 +73,7 @@ function M.register_key()
         {
             mode = { "n" },
             lhs = "<leader>ca",
-            rhs = vim.lsp.buf.code_action,
+            rhs = "<cmd>Lspsaga code_action<cr>",
             options = { silent = true },
             description = "Show code action",
         },
@@ -96,7 +96,7 @@ function M.register_key()
         {
             mode = { "n" },
             lhs = "gh",
-            rhs = vim.lsp.buf.hover,
+            rhs = "<cmd>Lspsaga hover_doc<cr>",
             options = { silent = true },
             description = "Show help information",
         },
@@ -156,16 +156,23 @@ function M.register_key()
         {
             mode = { "n" },
             lhs = "g[",
-            rhs = aid_nvim_lspconfig.goto_prev_diagnostic,
+            rhs = "<cmd>Lspsaga diagnostic_jump_prev<cr>",
             options = { silent = true },
             description = "Jump to prev diagnostic",
         },
         {
             mode = { "n" },
             lhs = "g]",
-            rhs = aid_nvim_lspconfig.goto_next_diagnostic,
+            rhs = "<cmd>Lspsaga diagnostic_jump_next<cr>",
             options = { silent = true },
             description = "Jump to next diagnostic",
+        },
+        {
+            mode = { "n" },
+            lhs = "gl",
+            rhs = "<cmd>Lspsaga show_line_diagnostics<cr>",
+            options = { silent = true },
+            description = "Show current line disgnostics",
         },
         {
             mode = { "i" },
