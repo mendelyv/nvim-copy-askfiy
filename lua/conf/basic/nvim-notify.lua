@@ -21,9 +21,8 @@ end
 
 function M.load()
     M.notify.setup({
-        stages = "fade",
-        timeout = 3000,
-        fps = 120,
+        stages = "slide",
+        timeout = 2000,
         icons = {
             ERROR = icons.Error,
             WARN = icons.Warn,
