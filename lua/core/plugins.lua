@@ -183,28 +183,14 @@ M.tools = {
         event = { "UIEnter" },
     },
     {
-        "lewis6991/gitsigns.nvim",
-        event = { "UIEnter" },
-    },
-    {
-        "uga-rosa/translate.nvim",
-        event = { "VeryLazy" },
-    },
-    {
+        -- simple session management for Neovim
         "olimorris/persisted.nvim",
         event = { "VeryLazy" },
     },
     {
+        -- key binding map
         "folke/which-key.nvim",
         event = { "VeryLazy" },
-    },
-    {
-        "askfiy/nvim-picgo",
-        lazy = true,
-    },
-    {
-        "kristijanhusak/vim-carbon-now-sh",
-        cmd = { "CarbonNowSh" },
     },
 }
 
@@ -226,10 +212,6 @@ M.views = {
         event = { "UIEnter" },
     },
     {
-        "dstein64/nvim-scrollview",
-        event = { "UIEnter" },
-    },
-    {
         "nvim-tree/nvim-tree.lua",
         lazy = true,
     },
@@ -247,6 +229,7 @@ M.views = {
             { "tpope/vim-dadbod" },
         },
         cmd = { "DBUIToggle" },
+        lazy = true,
     },
 }
 
