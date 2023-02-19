@@ -122,19 +122,8 @@ M.editor = {
         event = { "VeryLazy" },
     },
     {
-        "kevinhwang91/nvim-ufo",
-        dependencies = {
-            "kevinhwang91/promise-async",
-        },
-        event = { "VeryLazy" },
-    },
-    {
         "windwp/nvim-autopairs",
         event = { "InsertEnter" },
-    },
-    {
-        "jbyuki/venn.nvim",
-        lazy = true,
     },
 }
 
