@@ -15,7 +15,6 @@ local M = {
 function M.before()
     M.installer_tools = {
         lsp = {
-            "gopls",
             "pyright",
             "css-lsp",
             "json-lsp",
