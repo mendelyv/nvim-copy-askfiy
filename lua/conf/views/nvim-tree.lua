@@ -30,6 +30,8 @@ function M.load()
             update_cwd = false,
         },
         view = {
+            number = true,
+            relativenumber = true,
             side = "left",
             width = 30,
             hide_root_folder = false,
