@@ -29,9 +29,9 @@ function M.before()
             "tailwindcss-language-server",
         },
         dap = {
-            "delve",
-            "debugpy",
-            "js-debug-adapter@v1.74.1",
+            -- "delve",
+            -- "debugpy",
+            -- "js-debug-adapter@v1.74.1",
         },
         linter = {
             "pylint",
