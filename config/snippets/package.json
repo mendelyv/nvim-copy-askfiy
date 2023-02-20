@@ -42,6 +42,12 @@
         "language": [
           "markdown"
         ]
+      },
+      {
+        "path": "./typescript.json",
+        "language": [
+          "typescript"
+        ]
       }
     ]
   }
