@@ -1,8 +1,6 @@
 -- https://github.com/stevearc/aerial.nvim
 
 local api = require("utils.api")
-local public = require("utils.public")
-local icons = public.get_icons_group("lsp_kind", false)
 
 local M = {
     requires = {
@@ -14,7 +12,6 @@ function M.before() end
 
 function M.load()
     M.aerial.setup({
-        icons = icons,
         show_guides = true,
         backends = { "lsp", "treesitter", "markdown" },
         update_events = "TextChanged,InsertLeave",
@@ -23,29 +20,33 @@ function M.load()
             M.register_key()
         end,
         layout = {
-            min_width = 30,
-            max_width = { 40, 0.2 },
+            min_width = 60,
+            default_direction = "float",
+            -- max_width = { 40, 0.2 },
         },
         lsp = {
             diagnostics_trigger_update = false,
             update_when_errors = true,
             update_delay = 300,
         },
-        guides = {
-            mid_item = "├─",
-            last_item = "└─",
-            nested_top = "│ ",
-            whitespace = "  ",
-        },
+        close_on_select = true,
+        nerd_font = "auto",
+        -- guides = {
+        --     mid_item = "├─",
+        --     last_item = "└─",
+        --     nested_top = "│ ",
+        --     whitespace = "  ",
+        -- },
         filter_kind = {
-            "Module",
-            "Struct",
-            "Interface",
             "Class",
             "Constructor",
             "Enum",
             "Function",
+            "Interface",
+            "Module",
             "Method",
+            "Struct",
+            "Property",
         },
     })
 end
@@ -56,7 +57,7 @@ function M.register_key()
         {
             mode = { "n" },
             lhs = "<leader>2",
-            rhs = "<cmd>AerialToggle! right<cr>",
+            rhs = "<cmd>AerialToggle<cr>",
             options = { silent = true },
             description = "Open Outilne Explorer",
         },
