@@ -30,7 +30,7 @@ function M.before()
     M.complete_window_settings = {
         fixed = true,
         min_width = 15,
-        max_width = 15,
+        max_width = 50,
     }
     -- whether to allow the following completion sources to have the same keywords as other completion sources
     M.duplicate_keywords = {
