@@ -34,6 +34,30 @@ function M.load()
             exec = "<CR>",
         },
     })
+
+    vim.diagnostic.config({
+        -- 诊断的虚拟文本
+        virtual_text = {
+            -- disable = true,
+            -- 显示的前缀，可选项：'●', '▎', 'x'
+            -- 默认是一个小方块，不是很好看，所以这里改了
+            prefix = "●",
+            -- 是否总是显示前缀？是的
+            source = "always",
+            severity = {
+                -- 诊断的级别，可选项：'error', 'warning', 'info', 'hint'
+                min = vim.diagnostic.severity.ERROR,
+            },
+        },
+        float = {
+            -- 是否显示诊断来源？是的
+            source = "always",
+        },
+        -- 在插入模式下是否显示诊断？不要
+        update_in_insert = false,
+        -- 开启诊断按优先级排序
+        severity_sort = true,
+    })
 end
 
 function M.after() end
