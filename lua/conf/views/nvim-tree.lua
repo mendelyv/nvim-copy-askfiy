@@ -153,11 +153,11 @@ function M.load()
         },
         actions = {
             use_system_clipboard = true,
-            change_dir = {
-                enable = true,
-                global = true,
-                restrict_above_cwd = false,
-            },
+            -- change_dir = {
+            --     enable = true,
+            --     global = true,
+            --     restrict_above_cwd = false,
+            -- },
             open_file = {
                 resize_window = true,
                 window_picker = {
