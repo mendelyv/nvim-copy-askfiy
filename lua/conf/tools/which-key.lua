@@ -36,10 +36,13 @@ function M.after()
         s = { name = "Session" },
         u = { name = "Upload" },
         t = {
-            name = "Terminal | Translate",
-            c = "Translate English to Chinese",
-            e = "Translate Chinese to English",
+            name = "Terminal",
+            -- name = "Terminal | Translate",
+            -- c = "Translate English to Chinese",
+            -- e = "Translate Chinese to English",
         },
+        h = { name = "Hop" },
+        n = { name = "Neogen" },
     }, { prefix = "<leader>", mode = "n" })
 
     -- comment
